@@ -19,3 +19,16 @@ h3 {
 .list{
     list-style: none;
 }
+.button {
+color: black;
+}
+.btn-primary{
+  background-color:var(--accent);
+  color: var(--text-button);
+}
+.btn-header{
+  color:var(--accent);
+}
+.btn-footer{
+  color:var(--white-title);
+}
