@@ -1,0 +1,21 @@
+:root {
+  --background-color: #f7f8fd;
+  --bgd-footer-title-subtitle: #141b41;
+  --accent: #446df6;
+  --color-text: #72727e;
+  --text-button: #eeeeee;
+  --white-title: #f7f8fd;
+  --white-text: #e9ecf5;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--color-text);
+}
+h1,
+h2,
+h3 {
+  color: var(--bgd-footer-title-subtitle);
+}
+.list{
+    list-style: none;
+}
