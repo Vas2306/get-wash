@@ -10,6 +10,12 @@
 body {
   background-color: var(--background-color);
   color: var(--color-text);
+  font-family: 'Nunito',
+    sans-serif;
+    font-weight: 350;
+      font-size: 18px;
+      line-height: 1.4;
+
 }
 h1,
 h2,
@@ -19,16 +25,99 @@ h3 {
 .list{
     list-style: none;
 }
+.link{
+  text-decoration: none;
+}
+.header-link{
+color: inherit;  
+}
+.quest-title{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.25;
+    }
+.quest-text{
+  font-size: 24px;
+  line-height: 1.40;
+} 
+.start-title{
+  font-weight: 400;
+    font-size: 40px;
+    line-height: 1.10;
+}  
+.start-subtitle{
+  font-weight: 400;
+    font-size: 24px;
+    line-height: 1.35;
+} 
+.start-text{
+  font-size: 18px;
+    line-height: 1.35;
+}
+.partner-title{
+  font-weight: 400;
+    font-size: 32px;
+    line-height: 1.25;
+}
+/* .partner-text{
+  
+} */
+.partner-slogan{
+  font-size: 16px;
+    line-height: 1.40;
+    color: var(--bgd-footer-title-subtitle);
+}
+.test{
+  background-color: var(--accent);
+}
+.test-title{
+  font-weight: 400;
+    font-size: 40px;
+    line-height: 1.15;
+    color: var(--white-title);
+}
+.test-text{
+    color: var(--white-text);
+}
+.reviews-title{
+  font-weight: 400;
+    font-size: 40px;
+    line-height: 1.40;
+}
+/* .reviews-text{
+ 
+} */
+.reviews-name{
+  font-weight: 400;
+    font-size: 24px;
+    line-height: 1.40;
+}
+.footer{
+  background-color: var(--bgd-footer-title-subtitle);
+}
+.footer-link{
+  color: var(--white-text);
+}
+/* .reviews-profession{
+
+} */
 .button {
-color: black;
+font-weight: 400;
+  font-size: 16px;
+  line-height: 1.40;
 }
 .btn-primary{
+  font-weight: 500;
+    font-size: 18px;
+    line-height: 1.40;
   background-color:var(--accent);
   color: var(--text-button);
 }
 .btn-header{
   color:var(--accent);
+  background-color: transparent;
 }
 .btn-footer{
   color:var(--white-title);
+  background-color: transparent;
 }
