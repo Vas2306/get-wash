@@ -233,6 +233,8 @@ h3 {
   gap: 20px;
 }
 .test-img {
+  width: 522px;
+  height: 438px;
   position: absolute;
   right: 0;
   bottom: 0;
