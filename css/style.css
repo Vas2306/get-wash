@@ -11,6 +11,9 @@
 }
 body {
   background-color: var(--background-color);
+  background-image: url(../image/bgd.png);
+  background-repeat: no-repeat;
+  background-position: 50% -40px;
   color: var(--color-text);
   font-family: "Nunito", sans-serif;
   font-weight: 350;
@@ -82,6 +85,9 @@ h3 {
 .quest-wrapper {
   display: flex;
 }
+.quest-wrap{
+  width: 585px;
+}
 .quest-title {
   font-weight: 400;
   font-size: 37px;
@@ -94,8 +100,25 @@ h3 {
   line-height: 1.4;
   margin-bottom: 45px;
 }
+.quest-arrow {
+  fill: var(--accent);
+}
+.quest-img {
+  width: 585px;
+  height: 603px;
+  background-image: url(../image/phone-three.png);
+  background-size: contain;
+}
+.start{
+background-color: #fffffe;
+padding-top: 45px;
+padding-bottom: 45px;
+}
 .start-wrapper {
   display: flex;
+  background-image: url(../image/Group.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .start-img {
   margin-right: 110px;
