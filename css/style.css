@@ -272,6 +272,7 @@ padding-bottom: 45px;
 }
 .reviews-description {
   display: flex;
+  align-items: center;
   gap: 30px;
 }
 .footer {
