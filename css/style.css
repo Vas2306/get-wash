@@ -8,6 +8,7 @@
   --white-title: #f7f8fd;
   --white-text: #e9ecf5;
   --color-hover: #3044b6;
+  --timing-function: cubic-bezier(0.4,0,0.2,1);
 }
 body {
   background-color: var(--background-color);
@@ -68,10 +69,29 @@ h3 {
 }
 .header-link {
   color: inherit;
+  position: relative;
+  transition: color 250ms var(--timing-function);
+}
+.header-link::after{
+  content: '';
+  display: block;
+  position: absolute;
+ width: 100%;
+  height: 2px;
+  margin-top: 7px;
+  background-color: var(--accent);
+  opacity: 0;
+  transform: scaleX(0);
+  transition: opacity 250ms var(--timing-function),transform 250ms var(--timing-function);
 }
 .header-link:hover,
 .header-link:focus {
   color: var(--accent);
+}
+.header-link:hover::after,
+.header-link:focus::after {
+  opacity: 1;
+  transform: scaleX(1);
 }
 .header-icon {
   vertical-align: middle;
@@ -319,6 +339,7 @@ h3 {
   cursor: pointer;
   background-color: var(--accent);
   color: var(--text-button);
+  transition: background-color 250ms var(--timing-function);
 }
 .btn-primary:hover,
 .btn-primary:focus {
@@ -334,6 +355,7 @@ h3 {
   border-radius: 6px;
   border: 1px solid var(--white-text);
   cursor: pointer;
+  transition: border-color 250ms var(--timing-function);
 }
 .btn-header:hover,
 .btn-header:focus {
