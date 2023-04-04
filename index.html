@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get Wash</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap"
       rel="stylesheet"
@@ -320,9 +321,76 @@
         </button>
       </div>
     </footer>
+    <div class="backdrop">
+<div class="modal">
+<button type="button">
+  <svg class="icon-form">
+    <use width="24" height="24" href="image/symbol.svg#edit"></use>
+  </svg>
+</button>
+<strong>Стань нашим партнером
+и начни зарабатывать: </strong>
+<form>
+  <div class="input-wrap">
+    <input class="input-form" type="text" name="name" placeholder="Введите имя">
+    <svg class="icon-form">
+      <use width="24" height="24" href="image/symbol.svg#edit"
+      ></use>
+    </svg>
+  </div>
+  <div class="input-wrap">
+    <input type="email" class="input-form" name="email" placeholder="E-mail">
+    <svg class="icon-form">
+      <use width="24" height="24" href="image/symbol.svg#message"></use>
+    </svg>
+    <div class="input-wrap">
+      <input type="tel" class="input-form" name="tel" placeholder="Номер телефона">
+      <svg class="icon-form">
+        <use width="24" height="24" href="image/symbol.svg#call"></use>
+      </svg>
+    </div>
+  </div>
+  <div class="check-wrap">
+    <label>
+      <input type="checkbox" name="news">
+      Я хочу получать новости на почтовый адрес
+    </label>
+    <label>
+      <input type="checkbox" name="consent">
+      Я согласен учавствовать в сборе данных
+    </label>
+  </div>
+</form>
+</div>
+    </div>
+
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
   AOS.init();
 </script>
+
+
+<script>
+      const { height: pageHeaderHeight } = document
+        .querySelector(".header")
+        .getBoundingClientRect();
+      document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script>
+
+
+<script>
+      const refs = {
+        openModalBtn: document.querySelector("[data-open-modal]"),
+        closeModalBtn: document.querySelector("[data-close-modal]"),
+        backdrop: document.querySelector("[data-backdrop]"),
+      };
+
+      refs.openModalBtn.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
+      function toggleModal() {
+        refs.backdrop.classList.toggle("is-hidden");
+      }
+    </script>
   </body>
 </html>
