@@ -401,7 +401,7 @@ h3 {
   transform: translate(-50%,-50%) scale(1); 
   min-width: 480px;
   min-height: 600px;
-  background-color: var(--background-color);
+  background-color: #ffffff;
 }
 .icon-form{
   display: block;
@@ -411,4 +411,52 @@ h3 {
 .check-wrap{
   display: flex;
   flex-direction: column;
+}
+.wrap-close-strong{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn-close-modal{
+  position: absolute;
+top: 18px;
+right: 18px;
+width: 34px;
+height: 34px;
+cursor: pointer;
+background-color: transparent;
+border: none;
+}
+
+.modal-strong{
+  font-weight: 400;
+    font-size: 32px;
+    line-height: 1.25;
+    margin-top: 60px;
+    margin-bottom: 40px;
+   color: var(--bgd-footer-title-subtitle);
+}
+.form{
+  /* width: 360px; */
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.input-form{
+  width: 100%;
+ padding-top: 21px;
+  padding-bottom: 20px;
+  /* padding-left: 40px; */
+  /* margin-left: 40px; */
+  border-radius: 13px;
+  border: 1px solid var(--white-text);
+}
+.input-form::placeholder{
+  font-weight: 350;
+    font-size: 18px;
+    line-height: 1.25;
+    /* margin-left: 40px; */
+    padding-left: 40px;
+   color: #C0C0C0;
 }
