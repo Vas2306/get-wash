@@ -414,6 +414,13 @@ h3 {
   width: 24px;
   height: 24px;
 }
+.icon-close{
+  display: block;
+  width: 16px;
+  height: 16px;
+  fill: var(--color-text);
+}
+
 .check-wrap {
   display: flex;
   flex-direction: column;
@@ -424,16 +431,21 @@ h3 {
   align-items: center;
 }
 .btn-close-modal {
+  display: block;
   position: absolute;
   top: 18px;
   right: 18px;
-  width: 34px;
-  height: 34px;
+  width: 18px;
+  height: 18px;
   cursor: pointer;
   background-color: transparent;
   border: none;
+  transition: fill 250ms var(--timing-function);
 }
-
+.btn-close-modal:hover>.icon-close,
+.btn-close-modal:focus>.icon-close {
+  fill: var(--accent);
+}
 .modal-strong {
   display: block;
   font-weight: 400;
@@ -468,6 +480,9 @@ h3 {
 .input-form:focus {
   outline: none;
   border: 1px solid var(--accent);
+}
+.input-form:focus~.icon-form{
+  fill: var(--accent);
 }
 .icon-form {
   position: absolute;
