@@ -215,7 +215,7 @@
             </p>
           </li>
         </ul>
-        <button type="button" class="button btn-primary btn-partner">
+        <button type="button" class="button btn-primary btn-partner" data-open-modal>
           Стать партнером
         </button>
       </div>
@@ -321,24 +321,24 @@
         </button>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-backdrop>
 <div class="modal">
-   <button class="btn-close-modal" type="button">
+   <button class="btn-close-modal" data-close-modal type="button">
   <svg class="icon-form icon-close">
     <use width="24" height="24" href="image/symbol.svg#edit"></use>
   </svg>  
   </button>
   <div class="wrap-close-strong">
  
-<strong class="modal-strong">Стань нашим партнером<br>
+<strong class="modal-strong">Стань нашим партнером
 и начни зарабатывать: </strong>
   </div>
 
 
 <form class="form">
   <div class="input-wrap">
-    <input class="input-form" type="text" name="name" placeholder="Введите имя">
-    <svg class="icon-form">
+     <input class="input-form" type="text" name="name" placeholder="Введите имя"> 
+ <svg class="icon-form">
       <use width="24" height="24" href="image/symbol.svg#edit"
       ></use>
     </svg>
@@ -348,23 +348,29 @@
     <svg class="icon-form">
       <use width="24" height="24" href="image/symbol.svg#message"></use>
     </svg>
+    </div>
     <div class="input-wrap">
       <input type="tel" class="input-form" name="tel" placeholder="Номер телефона">
       <svg class="icon-form">
         <use width="24" height="24" href="image/symbol.svg#call"></use>
       </svg>
     </div>
-  </div>
-  <div class="check-wrap">
-    <label>
+   <div class="check-wrap">
+    <label class="check-label">
       <input type="checkbox" name="news">
       Я хочу получать новости на почтовый адрес
     </label>
-    <label>
-      <input type="checkbox" name="consent">
+    <label class="check-label">
+      <input type="checkbox" name="consent" checked>
       Я согласен учавствовать в сборе данных
     </label>
-  </div>
+  </div>  
+  <div class="wrap-btn-modal">
+    <button class="btn-primary btn-modal">Получить доступ</button> 
+  </div> 
+ 
+  <p class="policy">Нажимая кнопку Вы принимаете <span><a class="link-policy" href="">политику конфиденциальности</a></span> </p>
+
 </form>
 </div>
     </div>
